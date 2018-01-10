@@ -28,6 +28,7 @@ while True:
 
 
 def merge(left, right):
+    print('merger',left,'and',right)
     j = 0
     i = 0
     res = []
@@ -44,20 +45,15 @@ def merge(left, right):
             else:
                 res.append(rnext)
                 i += 1
-        elif lnext:
+        elif lnext != None:
             res.append(lnext)
             j += 1
-        elif rnext:
+        elif rnext != None:
             res.append(rnext)
             i += 1
         else:
             break
-    print(res)
     return res
-
-
-
-
 
 
 def sort(nums):
