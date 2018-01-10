@@ -28,7 +28,6 @@ while True:
 
 
 def merge(left, right):
-    print('merger',left,'and',right)
     j = 0
     i = 0
     res = []
@@ -38,7 +37,7 @@ def merge(left, right):
             rnext = right[i]
         if j < len(left):
             lnext = left[j]
-        if lnext and rnext:
+        if lnext != None and rnext != None:
             if lnext <= rnext:
                 res.append(lnext)
                 j += 1
