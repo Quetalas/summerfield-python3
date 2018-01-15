@@ -100,5 +100,5 @@ def process_options():
                 return (None, None)
     return maxwidth, form
 
-
-main()
+if __name__ == '__main__':
+    main()
